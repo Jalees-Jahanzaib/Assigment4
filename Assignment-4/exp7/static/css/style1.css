@@ -1,7 +1,7 @@
 body {
-    background-color: #eeeeee;
+    background-color: #eeeeee;//backgroud Colour for Quiz
 }
-
+//Make a Box for Size of 600px,500px
 .grid {
     width: 600px;
     height: 500px;
@@ -24,6 +24,7 @@ body {
 }
 
 #score {
+    //Displays Score
     color:  #000;
     text-align: center;
     font-size: 30px;
@@ -34,7 +35,7 @@ body {
     font-size: 30px;
     color:  #000;
 }
-
+//Displays Buttons CSS
 .buttons {
     margin-top: 30px;
 }
@@ -59,6 +60,7 @@ body {
     outline: 0;
 }
 
+//Shows Progress bar
 #progress {
     color: #2b2b2b;
     font-size: 18px;
