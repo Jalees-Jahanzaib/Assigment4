@@ -1,10 +1,11 @@
-Topic: Coarse-grained POS Tagging
+Topic:POS Tagger
 
 Front-end-work:
-	Need to make website responsive.
-	Use of jinja framework.
+	1.Make website responsive.
+	2.Use of jinja2 framework.
+	3.Routng using Flask.
 
 Back-end-work:
-	Experiments and quizes to be stored in database.
-	Use of flask and sqlite.
-	Converting php file to python.
+	1.Experiments and quizes to be stored in database.
+	2.Use of flask and sqlite.
+	3.Converting php file to python.
