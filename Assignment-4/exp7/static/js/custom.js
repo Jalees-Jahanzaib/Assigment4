@@ -39,11 +39,11 @@ $('.navbar-collapse ul li a').click(function() {
 $('#lang').val("-1");
 
 
-var cor = new Array();
-var algo = new Array();
-var train = new Array();
+var cor = new Array();//Has options for ist dropdown
+var algo = new Array();//Has options for 2nd dropdown
+var train = new Array();//Has options for 3rd dropdown
 
-function select2(){
+function select2(){ // forms select menu contining many sentences
 	var i = 0;
 	$('#cor').empty().append("<option value=\""+"-1"+"\" selected>---Select Size of training Corpus---</option>");
 	cor.forEach(function(item){
@@ -52,7 +52,7 @@ function select2(){
 	});
 	$('#cor').show();
 }
-
+// on selecting language, fetches data from database and call select2()
 $('#lang').change(function(){
 	var val = $('#lang').find(":selected").val();
 	if(val != -1){
@@ -159,7 +159,7 @@ $('#train').change(function(){
 	$('#ans').html("");
 });
 
-
+// on clicking submit button, tells whether answer is right
 $('#accuracy').click(function(){
 	var ans=0;
 	var x=$('#cor').find(":selected").val();
@@ -169,51 +169,51 @@ $('#accuracy').click(function(){
 	if(x=="0" && y=="0" && z=="0"){
 		ans=91.7;
 	}
-    if(x=="0" && y=="0" && z=="0"){
-		ans=91.7;
+    else if (x=="0" && y=="0" && z=="1"){
+		ans=51.7;
 	}
 	
-    if(x=="0" && y=="0" && z=="0"){
-		ans=91.7;
+  else  if(x=="0" && y=="1" && z=="0"){
+		ans=51.7;
 	}
 	
-    if(x=="0" && y=="0" && z=="0"){
-		ans=91.7;
+   else if(x=="1" && y=="0" && z=="1"){
+		ans=61.7;
 	}
 	
-    if(x=="0" && y=="0" && z=="0"){
-		ans=91.7;
+   else if(x=="2" && y=="0" && z=="0"){
+		ans=31.7;
 	}
 	
-    if(x=="0" && y=="0" && z=="0"){
-		ans=91.7;
+    else if(x=="2" && y=="0" && z=="1"){
+		ans=41.7;
 	}
 	
-    if(x=="0" && y=="0" && z=="0"){
+    else if(x=="3" && y=="0" && z=="0"){
+		ans=41.7;
+	}
+	else if(x=="3" && y=="0" && z=="1"){
 		ans=91.7;
 	}
-	if(x=="0" && y=="0" && z=="0"){
+	else if(x=="0" && y=="0" && z=="0"){
 		ans=91.7;
 	}
-	if(x=="0" && y=="0" && z=="0"){
+	else if(x=="0" && y=="0" && z=="1"){
 		ans=91.7;
 	}
-	if(x=="0" && y=="0" && z=="0"){
+	else if(x=="0" && y=="0" && z=="0"){
 		ans=91.7;
 	}
-	if(x=="0" && y=="0" && z=="0"){
+	else if(x=="0" && y=="0" && z=="1"){
 		ans=91.7;
 	}
-	if(x=="0" && y=="0" && z=="0"){
+	else if(x=="0" && y=="0" && z=="0"){
 		ans=91.7;
 	}
-	if(x=="0" && y=="0" && z=="0"){
+	else if(x=="0" && y=="0" && z=="1"){
 		ans=91.7;
 	}
-	if(x=="0" && y=="0" && z=="0"){
-		ans=91.7;
-	}
-	if(x=="0" && y=="0" && z=="0"){
+	else if(x=="0" && y=="0" && z=="0"){
 		ans=91.7;
 	}
 	
