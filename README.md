@@ -12,16 +12,18 @@
 1. run.py 				            #import app,db from exp7 and run app
 2. exp7
     1. __init__.py 	 	            #import flask , contain app, db, all routes
-    2. experiment.py 	            #contain database classes
-    3. templates			        #contain all html files
-        index.html 			        #contain layout part of website
+    2. experiment.py 	            #contains database classes
+    3. templates			        #contains all html files
+        index.html 			        #contains layout part of website
         other files contain the main block containing part as indicated by their name.
     4. static
         1.images                      
         2.css
-            style.css               #contain css part of all html files
+            style.css               #contains css part of all html files
+            style1.css              #contains css part of Quiz(speciall)
             some downloaded css files
         3.js
-            custom.js               #contain js part of all html files
+            custom.js               #contains js part of all html files
+            quiz.js                 #contians js for Quiz    
             some downloaded js files
 ```
