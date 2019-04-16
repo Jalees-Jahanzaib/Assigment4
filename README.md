@@ -15,7 +15,6 @@
     2. experiment.py 	            #contains database classes
     3. templates			        #contains all html files
         index.html 			        #contains layout part of website
-        other files contain the main block containing part as indicated by their name.
     4. static
         1.images                      
         2.css
