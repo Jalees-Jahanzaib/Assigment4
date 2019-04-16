@@ -1362,6 +1362,7 @@ font-size: 30px;
 	}
 }
 
+//Css for 
 #lang,#cor,#algo,#train,#accuracy{
 	display: block;
 	margin: 50px auto;
@@ -1372,6 +1373,7 @@ font-size: 30px;
 	text-align: center;
 }
 
+//css for buttons
 #cor,#train,#algo,#accuracy{
 	display: none;
 }
